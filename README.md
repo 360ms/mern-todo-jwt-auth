@@ -1,7 +1,5 @@
 # MERN TODO WITH JWT AUTH
 
-## MY FIRST MERN PROJECT
-
 ### Database - MongoDB
 
 ### Backend:
