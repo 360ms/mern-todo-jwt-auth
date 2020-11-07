@@ -1,0 +1,241 @@
+@import "antd/dist/antd.css";
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-attachment: fixed !important;
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url(img/bg.jpg);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.fullscreen {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+.fullscreen * {
+    color: #fff;
+}
+.content-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background: #24315e !important;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form input {
+    color: #24315e;
+    font-weight: 600;
+}
+
+.ant-input::placeholder {
+    color: grey !important;
+}
+
+.open-menu {
+    position: fixed;
+    font-size: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 40px;
+    max-width: 320px;
+    background: #24315e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    z-index: 999;
+}
+
+.navigation > div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.navigation a {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.navigation a:hover {
+    color: #a8d1e7;
+}
+
+@media screen and (max-width: 720px) {
+    .navigation {
+        top: 0;
+        bottom: inherit;
+        margin-top: 0;
+        flex-direction: row;
+        max-width: inherit;
+        right: 0;
+        padding-left: 20px;
+    }
+
+    .navigation a {
+        margin-top: 0;
+        margin-right: 20px;
+    }
+
+    .navigation > div {
+        width: 100vw;
+        max-height: 40px !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        margin-bottom: 0 !important;
+    }
+
+    .ant-page-header-heading {
+        display: flex;
+        flex-direction: column;
+    }
+    .ant-page-header-heading-extra {
+        white-space: inherit;
+    }
+}
+
+.todos {
+    background: #24315e;
+    border-radius: 10px;
+}
+
+.todos input,
+.todos button,
+.todos select,
+.todos .ant-select-selection-item {
+    color: #24315e !important;
+}
+
+.todos .ant-select-arrow {
+    background: #24315e;
+    border-radius: 2px;
+    padding-top: 1px;
+    width: 14px;
+    height: 14px;
+}
+
+.todo-search {
+    width: inherit;
+}
+
+.ant-list-split .ant-list-item {
+    border-bottom: inherit;
+}
+.ant-list-bordered {
+    border: inherit;
+}
+
+.ant-divider {
+    border-top: 1px solid #fff;
+}
+.ant-divider-horizontal {
+    margin: 0 20px;
+    width: inherit;
+    min-width: inherit;
+}
+
+.create-todo-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.completed-todo {
+    text-decoration: line-through;
+    color: #cecece;
+}
+.important-todo {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.avatar {
+    background: #24315e;
+}
+
+.error-text {
+    color: #f76d6d;
+}
+
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+.delete-button {
+    background: #f76d6d;
+}
+.delete-button:hover,
+.delete-button:focus {
+    background: #b24f4f;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.ml-1 {
+    margin-left: 10px;
+}
+.ml-2 {
+    margin-left: 20px;
+}
+.ml-3 {
+    margin-left: 30px;
+}
+.ml-4 {
+    margin-left: 40px;
+}
+.ml-5 {
+    margin-left: 50px;
+}
+
+.mr-1 {
+    margin-right: 10px;
+}
+.mr-2 {
+    margin-right: 20px;
+}
+.mr-3 {
+    margin-right: 30px;
+}
+.mr-4 {
+    margin-right: 40px;
+}
+.mr-5 {
+    margin-right: 50px;
+}
