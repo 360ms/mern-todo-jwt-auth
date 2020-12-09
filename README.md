@@ -2,7 +2,7 @@
 
 ### Database - MongoDB
 
-Live demo - https://merntodosss.herokuapp.com
+Live demo - https://merntodosss.herokuapp.com/
 
 ### Backend:
 - Node.js
