@@ -1,4 +1,4 @@
-# MERN TODO WITH JWT AUTH
+## Minimal full-stack MERN Todo app with authentication using JWT.
 
 ### Database - MongoDB
 
